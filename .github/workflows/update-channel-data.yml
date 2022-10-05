@@ -1,0 +1,11 @@
+name: 🔄-update-channel-cron
+on:
+  schedule:
+    # Every 12 hours
+    - cron: "0 */12 * * *"
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send request to /api/update-channels-data endpoint
+        run: curl https://videomentions.com/api/update-channels-data
