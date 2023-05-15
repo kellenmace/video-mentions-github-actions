@@ -1,3 +1,3 @@
 # VideoMentions GitHub Actions
 
-GitHub Actions for https://videomentions.com
+GitHub Actions for https://VideoMentions.com
