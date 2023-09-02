@@ -2,10 +2,10 @@ name: ⚙️-process-queue-cron
 on:
   schedule:
     # Every 15 minutes
-    - cron: '*/15 * * * *'
+    - cron: "*/15 * * * *"
 jobs:
   cron:
     runs-on: ubuntu-latest
     steps:
       - name: Send request to /api/process-queue endpoint
-        run: curl https://videomentions.com/api/process-queue
+        run: curl https://videomentions.com/api/process-queue?key=rhDW5ABp4rGL2w

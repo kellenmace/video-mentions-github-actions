@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send request to /api/update-channels-data endpoint
-        run: curl https://videomentions.com/api/update-channels-data
+        run: curl https://videomentions.com/api/update-channels-data?key=rhDW5ABp4rGL2w

@@ -2,10 +2,10 @@ name: 📥-populate-queue-cron
 on:
   schedule:
     # At minute 0 of every hour
-    - cron: '0 * * * *'
+    - cron: "0 * * * *"
 jobs:
   cron:
     runs-on: ubuntu-latest
     steps:
       - name: Send request to /api/populate-queue endpoint
-        run: curl https://videomentions.com/api/populate-queue
+        run: curl https://videomentions.com/api/populate-queue?key=rhDW5ABp4rGL2w
